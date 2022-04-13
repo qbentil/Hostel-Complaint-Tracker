@@ -8,3 +8,5 @@
 - Extra marks will be given to clarity and design.
 ```
 
+## TECHSTACK USED
+`HTML, CSS, BOOTSTRAP & VANILLA JAVASCRIPT` as required to.👀

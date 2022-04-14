@@ -18,6 +18,10 @@ body{
 .contact-form .form-control{
     border-radius: 0.5rem;
 }
+.form-control:focus {
+    border-color: rgb(3, 99, 224);
+    box-shadow: 0 0 0 0.2rem rgba(3, 99, 224, 0.25);
+} 
 .contact-image{
     text-align: center;
 }

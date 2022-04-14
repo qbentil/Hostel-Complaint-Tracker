@@ -50,13 +50,9 @@ body{
     cursor: pointer;
     margin-top: 20%;
 }
-/* .btnContactSubmit
-{
-    width: 50%;
-    border-radius: 1rem;
-    padding: 1.5%;
-    color: #fff;
-    background-color: #0062cc;
-    border: none;
-    cursor: pointer;
-} */
+
+
+/* Alert */
+.info{
+    margin-top: -30px !important;
+}

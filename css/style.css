@@ -86,3 +86,7 @@ body{
 #dashboard{
     display: none;
 }
+
+.action_btn{
+    margin-top: -70px;
+}

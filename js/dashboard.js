@@ -40,3 +40,11 @@ if(authState.loggedIn !== 1)
     reports_tb.innerHTML = ouput;
     
 }
+
+
+
+
+
+// footer
+let today 
+document.getElementById("year").innerText = new Date().getFullYear()

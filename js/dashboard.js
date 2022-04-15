@@ -5,7 +5,7 @@ const reports_tb = document.getElementById('reports_tb');
 
 console.log(authState);
 
-if(authState.loggedIn !== 1)
+if(authState == null | authState.loggedIn !== 1)
 {
     alert("Sorry, You don't have admin access, Login!")
     window.location.replace("/login.html");

@@ -22,13 +22,13 @@
         <div class="contact-image">
             <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
         </div>
-        <form method="post">
+        <form method="post" autocomplete="off" id="report_form">
             <h3>Genuis Hostel Report Tracker</h3>
             <div class="row info mb-2 mt-0">
                 <div class="col-md-2"></div>
                 <div class="col-md-8 alert  alert-dismissible fade show">
                     <button type="button" class="close" data-dismiss="alert">&times;</button>
-                    <strong>Success!</strong> Indicates a successful or positive action.
+                    <strong id="alert-type">Success!</strong> <span id="alert-msg">Indicates a successful or positive action.</span>
                 </div>
                 <div class="col-md-2"></div>
             </div>
@@ -38,7 +38,7 @@
                         <input type="text" name="sName" id="sName" class="form-control" placeholder="Your Name *" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="sID" id="sID" class="form-control" placeholder="Your Student ID *" />
+                        <input type="text" name="sID" id="sID" class="form-control outline-danger"  placeholder="Your Student ID *" maxlength="8" />
                     </div>
                     <div class="form-group">
                         <input type="text" name="rNum" id="rNum" class="form-control" placeholder="Your Room Number *" />
@@ -46,17 +46,17 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <textarea name="rMsg" id="rMsg" class="form-control" placeholder="Your Report Message *" style="width: 100%; height: 150px;"></textarea>
+                        <textarea name="rMsg" id="rMsg" class="form-control" maxlength="500" placeholder="Your Report Message *" style="width: 100%; height: 150px;"></textarea>
+                        <small class="text-warning">MaxLength: <span id="msgCount"></span> Characters remaining</small>
                     </div>
                 </div>
-            </div>
+            </div><br><br>
             <div class="row">
-                <!-- <div class="col-md-4"></div> -->
-                <div class="form-group col-md-6">
-                    <button type="submit" id="btn_send" name="btnSubmit" class="btnContact">Send Report</button>
+                <div class="col-md-6">
+                    <button type="button" id="btn_send" name="btnSubmit" class="btnContact">Send Report</button>
                 </div>
-
             </div>
+
         </form>
     </div>
 

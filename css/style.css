@@ -19,7 +19,7 @@ body{
     border-radius: 0.5rem;
 }
 .form-control:focus {
-    border-color: rgb(3, 99, 224);
+    border-color: #0062cc;
     box-shadow: 0 0 0 0.2rem rgba(3, 99, 224, 0.25);
 } 
 .contact-image{
@@ -63,5 +63,26 @@ body{
 }
 
 .alert{
+    display: none;
+}
+
+/* footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0062cc;
+    color: white;
+    text-align: center;
+}
+
+.footer p{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Dashboard page */
+#dashboard{
     display: none;
 }

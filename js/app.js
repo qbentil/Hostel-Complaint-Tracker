@@ -115,3 +115,6 @@ function character_count(num)
     let rem = MAX_COUNT - num;
     msgCount.innerText = rem
 }
+
+let today 
+document.getElementById("year").innerText = new Date().getFullYear()

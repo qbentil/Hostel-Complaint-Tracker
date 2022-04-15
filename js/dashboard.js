@@ -5,40 +5,46 @@ const reports_tb = document.getElementById('reports_tb');
 
 console.log(authState);
 
-if(authState == null | authState.loggedIn !== 1)
+if(authState != null)
+{
+    if(authState.loggedIn !== 1)
 {
     alert("Sorry, You don't have admin access, Login!")
     window.location.replace("/login.html");
-}else{
-    dashboard.style.display = "block"
-
-    // alert(reports.length)
-    let ouput = "";
-
-    if(reports.length <= 0)
-    {
-        ouput += `
-        <tr>
-            <td scope="row" colspan="4" class="text-primary">No report records found</td>
-        </tr>
-        `
     }else{
-        for (let i = 0; i < reports.length; i++) {
+        dashboard.style.display = "block"
+
+        // alert(reports.length)
+        let ouput = "";
+
+        if(reports.length <= 0)
+        {
             ouput += `
             <tr>
-                <td scope="row" >${1+i}</td>
-                <td scope="row" >${reports[i].user.name}</td>
-                <td scope="row" >${reports[i].user.id}</td>
-                <td scope="row" >${reports[i].user.rid}</td>
-                <td scope="row" >${reports[i].user.msg}</td>
+                <td scope="row" colspan="4" class="text-primary">No report records found</td>
             </tr>
             `
-            
-        }
+        }else{
+            for (let i = 0; i < reports.length; i++) {
+                ouput += `
+                <tr>
+                    <td scope="row" >${1+i}</td>
+                    <td scope="row" >${reports[i].user.name}</td>
+                    <td scope="row" >${reports[i].user.id}</td>
+                    <td scope="row" >${reports[i].user.rid}</td>
+                    <td scope="row" >${reports[i].user.msg}</td>
+                </tr>
+                `
+                
+            }
 
+        }
+        reports_tb.innerHTML = ouput;
+        
     }
-    reports_tb.innerHTML = ouput;
-    
+}else{
+    alert("Sorry, You don't have admin access, Login!")
+    window.location.replace("/login.html");
 }
 
 

@@ -48,7 +48,15 @@ if(authState != null)
 }
 
 
+// Logout
+document.getElementById("logout_btn").addEventListener("click", () => {
+    let auth_state = {
+        loggedIn: 0
+    }
 
+    localStorage.setItem("auth_state", JSON.stringify(auth_state))
+    window.location.replace("/login.html");
+})
 
 
 // footer

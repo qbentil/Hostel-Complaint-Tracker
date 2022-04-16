@@ -10,3 +10,11 @@
 
 ## TECHSTACK USED
 `HTML, CSS, BOOTSTRAP & VANILLA JAVASCRIPT` as required to.👀
+
+**PROJECT FUNCTIONALITY**
+``` python
+- Well Validated User reports page for sending reports
+- Hostel Administrators login page
+- Fully functioning Administrator Login / Authentication 
+- Admin dashboard to proof red students reports.
+```

@@ -18,3 +18,6 @@
 - Fully functioning Administrator Login / Authentication 
 - Admin dashboard to proof red students reports.
 ```
+
+## DEMO
+Live Project demo 👉 <a href = "https://genuis-reports-tracker.netlify.app" target="_blank">Live Demo</a>

@@ -3,7 +3,7 @@ const reports = JSON.parse(localStorage.getItem('reports')) || []
 const dashboard = document.getElementById('dashboard');
 const reports_tb = document.getElementById('reports_tb');
 
-console.log(authState);
+// console.log(authState);
 
 if(authState != null)
 {

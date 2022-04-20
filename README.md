@@ -13,7 +13,7 @@
 
 **PROJECT FUNCTIONALITY**
 ``` python
-- Well Validated User reports page for sending reports
+- Well Validated Hostel Report Form for sending reports
 - Hostel Administrators login page
 - Fully functioning Administrator Login / Authentication 
 - Admin dashboard to proof red students reports.
